@@ -8,6 +8,7 @@ program
 async function main() {
   const event = JSON.parse(fs.readFileSync('/github/workflow/event.json', 'utf8'))
   const validLicenses = program.licenses.split(',').map(val => val.toLowerCase())
+  const validLicenses = ["bsd"]
   let repoLicense
   if (event.repository.license) repoLicense = event.repository.license.key.toLowerCase()
 
@@ -19,6 +20,7 @@ if (require.main === module) {
   main()
     .then(res => {
       console.log({ res })
+      console.log(`Everything passed correctly`);
       process.exitCode = 0
     })
     .catch(err => {
