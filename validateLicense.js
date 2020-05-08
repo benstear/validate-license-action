@@ -21,11 +21,11 @@ if (require.main === module) {
     .then(res => {
       console.log({ res })
       console.log(`Everything passed correctly`);
-      console.log("::set-output name=java_output::True")
+      console.log("::set-output name=license::True")
       process.exitCode = 0
     })
     .catch(err => {
-      console.log("::set-output name=java_output::False")
+      console.log("::set-output name=license::False")
       console.log({ err })
       process.exitCode = 1
     })
