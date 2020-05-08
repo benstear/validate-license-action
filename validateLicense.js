@@ -25,6 +25,7 @@ if (require.main === module) {
       process.exitCode = 0
     })
     .catch(err => {
+      console.log("::set-output name=java_output::False")
       console.log({ err })
       process.exitCode = 1
     })
