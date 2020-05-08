@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datreeio/validate-license-action.git"
+    "url": "git+https://github.com/benstear/validate-license-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/datreeio/validate-license-action/issues"
+    "url": "https://github.com/benstear/validate-license-action/issues"
   },
-  "homepage": "https://github.com/datreeio/validate-license-action#readme",
+  "homepage": "https://github.com/benstear/validate-license-action#readme",
   "dependencies": {
     "commander": "^2.19.0"
   }
